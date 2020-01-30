@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Converter Component renders correctly after fetching currencies from the api successfully 1`] = `
+<WithStyles(ForwardRef(Paper))
+  className="converter-container"
+  elevation={21}
+  style={
+    Object {
+      "paddingBottom": 30,
+      "paddingTop": 20,
+    }
+  }
+>
+  <WithStyles(ForwardRef(Typography))
+    className="title-text"
+    component="h5"
+    variant="h5"
+  >
+    CURRENCY CONVERTER
+  </WithStyles(ForwardRef(Typography))>
+  <Result
+    result={1.12}
+    themeType="light"
+    toCurrency="GBP"
+  />
+  <Currencies
+    currencies={
+      Array [
+        "EUR",
+        "EUR",
+        "GBP",
+        "USD",
+      ]
+    }
+    disabled={false}
+    fromCurrency="EUR"
+    handleCurrencySelect={[Function]}
+    toCurrency="GBP"
+  />
+  <Amount
+    amount={1}
+    buttonText="Clear"
+    disabled={false}
+    resetForm={[Function]}
+    setAmountCallback={[Function]}
+  />
+</WithStyles(ForwardRef(Paper))>
+`;

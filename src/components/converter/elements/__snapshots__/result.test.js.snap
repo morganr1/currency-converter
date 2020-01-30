@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result element renders correctly with the required props passed to it 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="result-text"
+  color="textSecondary"
+  component="h4"
+  style={
+    Object {
+      "background": "#333333",
+    }
+  }
+  variant="h4"
+>
+  €10.00
+</WithStyles(ForwardRef(Typography))>
+`;

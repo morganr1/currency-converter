@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField Component renders correctly 1`] = `
+<WithStyles(ForwardRef(FormControl))
+  variant="outlined"
+>
+  <WithStyles(ForwardRef(TextField))
+    InputProps={
+      Object {
+        "inputMode": "numeric",
+        "inputProps": Object {
+          "min": 1,
+        },
+      }
+    }
+    aria-label="test label text field"
+    autoFocus={true}
+    className="makeStyles-textField-1"
+    id="test label-input"
+    label="test label"
+    margin="normal"
+    onChange={[MockFunction]}
+    required={true}
+    type="number"
+    value={1}
+    variant="outlined"
+  />
+</WithStyles(ForwardRef(FormControl))>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown Component renders correctly 1`] = `
+<Fragment>
+  <WithStyles(ForwardRef(FormControl))
+    className="makeStyles-formControl-1"
+    variant="outlined"
+  >
+    <WithStyles(ForwardRef(InputLabel))
+      id="Test Dropdown Label-dropdown-label"
+    >
+      Test Dropdown Label
+    </WithStyles(ForwardRef(InputLabel))>
+    <WithStyles(ForwardRef(Select))
+      className="makeStyles-select-2"
+      id="Test Dropdown Label-dropdown"
+      labelId="Test Dropdown Label-dropdown-label"
+      labelWidth={0}
+      name="Test Dropdown Label"
+      onChange={[MockFunction]}
+      value="EUR"
+    >
+      <WithStyles(ForwardRef(MenuItem))
+        key="EUR"
+        value="EUR"
+      >
+        EUR
+      </WithStyles(ForwardRef(MenuItem))>
+      <WithStyles(ForwardRef(MenuItem))
+        key="GBP"
+        value="GBP"
+      >
+        GBP
+      </WithStyles(ForwardRef(MenuItem))>
+    </WithStyles(ForwardRef(Select))>
+  </WithStyles(ForwardRef(FormControl))>
+</Fragment>
+`;

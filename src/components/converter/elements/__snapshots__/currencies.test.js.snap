@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currencies element renders correctly with the required props passed to it 1`] = `
+<div
+  className="currencies-container"
+>
+  <DropDownComponent
+    currentValue="GBP"
+    label="From"
+    onChangeCallback={[MockFunction]}
+    values={
+      Array [
+        "EUR",
+        "GBP",
+        "USD",
+      ]
+    }
+  />
+  <DropDownComponent
+    currentValue="EUR"
+    label="To"
+    onChangeCallback={[MockFunction]}
+    values={
+      Array [
+        "EUR",
+        "GBP",
+        "USD",
+      ]
+    }
+  />
+</div>
+`;

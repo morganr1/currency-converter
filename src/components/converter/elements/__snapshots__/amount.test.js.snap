@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Amount element renders correctly with the required props passed to it 1`] = `
+<div
+  className="amount-container"
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "margin": "0 auto",
+      "minWidth": 257,
+    }
+  }
+>
+  <TextFieldComponent
+    label="Amount"
+    onChangeCallback={[Function]}
+    value={12}
+  />
+  <WithStyles(ForwardRef(Button))
+    aria-label="convert currency button"
+    color="primary"
+    onClick={[Function]}
+    size="large"
+    startIcon={<UNDEFINED />}
+    style={
+      Object {
+        "width": 400,
+      }
+    }
+    variant="contained"
+  >
+    Test Button Text
+  </WithStyles(ForwardRef(Button))>
+</div>
+`;
