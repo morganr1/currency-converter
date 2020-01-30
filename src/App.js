@@ -16,10 +16,15 @@ function App() {
     );
     theme = responsiveFontSizes(theme);
     const type = theme.palette.type;
-
     return (
           <ThemeProvider theme={theme}>
-            <Button style={{position: 'absolute', top: 0, right: 0 }} variant="contained" color="secondary" onClick={() => toggleDarkMode(!darkMode)}>Go Dark</Button>
+            <Button
+                style={{ position: 'absolute', top: 0, right: 0 }}
+                variant="contained"
+                color="secondary"
+                onClick={() => toggleDarkMode(!darkMode)}>
+               {darkMode ? 'Go Light' : 'Go Dark' }
+            </Button>
             <CurrencyConverter themeType={type} />
           </ThemeProvider>
     );
