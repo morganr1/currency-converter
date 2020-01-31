@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -11,6 +12,12 @@ const useStyles = makeStyles(theme => ({
     },
     select: {
         width: 192,
+        [theme.breakpoints.down(460)]: {
+            width: 144
+        },
+        [theme.breakpoints.down(362)]: {
+            width: 92
+        },
     },
     selectEmpty: {
         marginTop: theme.spacing(2),
@@ -47,4 +54,12 @@ export const DropDownComponent = ({ disabled, values, currentValue, onChangeCall
             </FormControl>
         </Fragment>
     );
+};
+
+DropDownComponent.propTypes = {
+  disabled: PropTypes.bool,
+  values: PropTypes.array.isRequired,
+  currentValue: PropTypes.string.isRequired,
+  onChangeCallback: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
 };
