@@ -1,7 +1,7 @@
 {
   "name": "plan-currency-converter",
   "version": "1.0.0",
-  "homepage": "https://morganr1.github.io/currency-converter",
+  "homepage": "https://morganr1.github.io/currency-converter/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.0",
