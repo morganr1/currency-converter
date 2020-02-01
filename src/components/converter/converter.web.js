@@ -57,6 +57,8 @@ class Converter extends Component {
         }
     };
 
+    swapCurrencies = () => this.setState(prevState => ({ toCurrency: prevState.fromCurrency, fromCurrency: prevState.toCurrency }))
+
     resetForm = amount => {
         this.setState({ amount, result: 1 });
         this.handleConversion();
@@ -72,7 +74,7 @@ class Converter extends Component {
             <Paper elevation={21} className="converter-container" style={{ paddingTop: 20, paddingBottom: 30 }}>
                 <Typography className="title-text" variant="h5" component="h5">CURRENCY CONVERTER</Typography>
                 <Result {...{ result, toCurrency, themeType }} />
-                <Currencies {...{ disabled, currencies, fromCurrency, toCurrency, handleCurrencySelect: this.handleCurrencySelect }} />
+                <Currencies {...{ disabled, currencies, fromCurrency, toCurrency, swapCurrencies: this.swapCurrencies, handleCurrencySelect: this.handleCurrencySelect }} />
                 <Amount {...{ disabled, amount, setAmountCallback: this.setAmount, resetForm: this.resetForm, buttonText: 'Clear' }} />
             </Paper>
         )

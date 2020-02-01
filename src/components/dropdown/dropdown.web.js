@@ -11,9 +11,9 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(1),
     },
     select: {
-        width: 192,
+        width: 170,
         [theme.breakpoints.down(460)]: {
-            width: 144
+            width: 120
         },
         [theme.breakpoints.down(362)]: {
             width: 92

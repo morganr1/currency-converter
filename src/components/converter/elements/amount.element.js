@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
     button: {
         width: 400,
         marginTop: 20,
-        [theme.breakpoints.down(600)]: {
+        [theme.breakpoints.down(460)]: {
             width: 300
         },
         [theme.breakpoints.down(362)]: {

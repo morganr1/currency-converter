@@ -1,10 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SwapHorizIcon from '@material-ui/icons/SwapHoriz';
 import { Dropdown } from './../../index';
+import IconButton from "@material-ui/core/IconButton";
 
-export const Currencies = ({ disabled, currencies, fromCurrency, toCurrency, handleCurrencySelect }) =>
+export const Currencies = ({ disabled, currencies, swapCurrencies, fromCurrency, toCurrency, handleCurrencySelect }) =>
     <div className="currencies-container">
         <Dropdown {...{ disabled, values: currencies, currentValue: fromCurrency, onChangeCallback: handleCurrencySelect, label: 'From' }}/>
+        <IconButton
+            style={{ alignSelf: 'center' }}
+            disabled={disabled}
+            aria-label="swap currency button"
+            size="large"
+            onClick={() => swapCurrencies()}
+            color="primary"
+        >
+            <SwapHorizIcon />
+        </IconButton>
         <Dropdown {...{ disabled, values: currencies, currentValue: toCurrency, onChangeCallback: handleCurrencySelect, label: 'To' }}/>
     </div>;
 

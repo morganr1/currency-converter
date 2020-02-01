@@ -35,6 +35,7 @@ exports[`Converter Component renders correctly after fetching currencies from th
     disabled={false}
     fromCurrency="EUR"
     handleCurrencySelect={[Function]}
+    swapCurrencies={[Function]}
     toCurrency="GBP"
   />
   <Amount
