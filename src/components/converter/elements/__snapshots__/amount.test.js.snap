@@ -2,16 +2,7 @@
 
 exports[`Amount element renders correctly with the required props passed to it 1`] = `
 <div
-  className="amount-container"
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexDirection": "column",
-      "margin": "0 auto",
-      "minWidth": 257,
-    }
-  }
+  className="makeStyles-container-2"
 >
   <TextFieldComponent
     label="Amount"
@@ -20,15 +11,15 @@ exports[`Amount element renders correctly with the required props passed to it 1
   />
   <WithStyles(ForwardRef(Button))
     aria-label="convert currency button"
+    classes={
+      Object {
+        "root": "makeStyles-button-1",
+      }
+    }
     color="primary"
     onClick={[Function]}
     size="large"
     startIcon={<UNDEFINED />}
-    style={
-      Object {
-        "width": 400,
-      }
-    }
     variant="contained"
   >
     Test Button Text

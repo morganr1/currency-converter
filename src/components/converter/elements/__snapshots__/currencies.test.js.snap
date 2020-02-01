@@ -16,6 +16,19 @@ exports[`Currencies element renders correctly with the required props passed to 
       ]
     }
   />
+  <WithStyles(ForwardRef(IconButton))
+    aria-label="swap currency button"
+    color="secondary"
+    onClick={[Function]}
+    size="large"
+    style={
+      Object {
+        "alignSelf": "center",
+      }
+    }
+  >
+    <SwapHorizIcon />
+  </WithStyles(ForwardRef(IconButton))>
   <DropDownComponent
     currentValue="EUR"
     label="To"

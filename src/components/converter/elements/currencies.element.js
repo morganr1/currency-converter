@@ -13,7 +13,7 @@ export const Currencies = ({ disabled, currencies, swapCurrencies, fromCurrency,
             aria-label="swap currency button"
             size="large"
             onClick={() => swapCurrencies()}
-            color="primary"
+            color="secondary"
         >
             <SwapHorizIcon />
         </IconButton>
